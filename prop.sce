@@ -4,18 +4,15 @@ CL_init;
 // =====================================================
 
 // Date/time of orbital elements (TREF)
-/*
-cjd0 = CL_dat_cal2cjd(2026,7,25,14,14,0);
-cjd = cjd0 + (0 : 60 : 86400/6)/86400;
-*/
 
-UTC_offset = 3; // Sofia = UTC + 3; Nuremberg = UTC + 2
+UTC_offset = 3; // Sofia, BG = UTC + 3; You must enter the accurate UTC offset of your location
 t = datevec(now());
 t(4) = t(4) - UTC_offset;
 cjd0 =  CL_dat_convert('cal', 'cjd', t');// - 1/12/2;
 cjd = cjd0 + (0 : 1/1440 : 1/6); // 4 hours
 
 // Balkan-2
+// https://www.n2yo.com/satellite/?s=69024
 str = [..
 '1 69024U 26100AW  26229.50886231  .00003134  00000-0  14604-3 0  9993'; ..
 '2 69024  97.3977 126.2108 0004478 125.0504 235.1152 15.20618553 16120'];
