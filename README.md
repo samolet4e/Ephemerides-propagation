@@ -1,1 +1,1 @@
-Short-term and long-term orbit propagation of artificial Earth satellite. CelestLab and CelestLabX are necessary to be installed in SciLab environment prior to using the code. Navigate to project directory and run go.sce script.
+Short-term and long-term orbit propagation of artificial Earth satellite. CelestLab and CelestLabX tools are necessary to be installed to SciLab environment prior to using the code. Navigate to project directory and run go.sce script.
